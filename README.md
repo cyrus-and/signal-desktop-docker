@@ -15,3 +15,9 @@ cp -r ~/.config/Signal/ .
 Just run `make` to start Signal Desktop.
 
 Use `make build` to rebuild the image in order to perform a system upgrade (if really needed), `make clean-docker` to remove everything Docker-wise and `make clean-signal` to remove everything Signal-wise (use it with care).
+
+Use the `gpg-export.sh` utility to save the whole directory as a GPG encrypted archive:
+
+```
+./gpg-export.sh /path/to/backup/
+```
