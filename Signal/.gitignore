@@ -1,0 +1,4 @@
+# this directory must exist otherwise it will be created by Docker and will be
+# owned by root, so it is added to Git
+*
+!.gitignore

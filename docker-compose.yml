@@ -1,0 +1,9 @@
+version: '3'
+services:
+  signal:
+    build: .
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - ./Signal:/home/signal/.config/Signal
+      - /tmp/.X11-unix:/tmp/.X11-unix
